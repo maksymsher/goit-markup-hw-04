@@ -9,6 +9,8 @@
   --our-team-back: #f4f4fd;
   --footer-text: #e7e9fc;
   --btn-portfolio-back-primary: #f4f4fd;
+  --ocean-green: #31d0aa;
+  --light-slate: #8e8f99;
 }
 
 body {
@@ -151,13 +153,20 @@ p {
       rgba(46, 47, 66, 0.7)
     ),
     url(../images/index/peopleoffice.jpg);
+  background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
-
+  margin-left: auto;
+  margin-right: auto;
   background-color: var(--background-black);
 }
 
+
+.hero-section {
+  justify-content: center;
+  align-items: center;
+  background-position: 50%, 50%;
+}
 .title-items {
   width: 496px;
   margin-left: 0;
@@ -217,8 +226,6 @@ p {
 .main-cards {
   width: 264px;
 }
-
-
 
 .main-description-title {
   font-weight: 500;
@@ -323,10 +330,9 @@ p {
   background-color: var(--background-black);
   padding-top: 100px;
   padding-bottom: 100px;
-  
 }
 
-.all-footer{
+.all-footer {
   display: flex;
 }
 
@@ -337,53 +343,85 @@ p {
   margin-top: 16px;
 }
 
-
-
-.social-footer{
+.social-footer {
   color: var(--background);
   display: inline-block;
-  
   width: 208px;
   height: 88px;
   margin-left: 120px;
 }
 
-.footer-social-icons{
+.footer-social-icons {
   display: flex;
   justify-content: center;
   gap: 16px;
-  
-  
+  margin-top: 16px;
 }
 
-.svg-footer{
+.svg-footer {
   width: 40px;
   height: 40px;
 }
-  
-  
 
-
-.footer-social-link{
+.footer-social-link {
   width: 40px;
   height: 40px;
   border-radius: 50%;
-  
-  display: block;
+  display: flex;
   background-color: rgba(255, 255, 255, 0.1);
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-social-link:hover {
+  background-color: var(--ocean-green);
 }
 
 /* custumer section */
 
-.custumer-list{
-  display: flex;
+.customers-title {
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 130px;
+  color: var(--background-black);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 40px;
 }
 
-.custumer-item{
+.custumer-list {
+  display: flex;
+  gap: 24px;
+  margin-top: 72px;
+}
+
+.custumer-item {
   width: 168px;
   height: 88px;
+  display: flex;
+  border-radius: 4px;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #8e8f99;
+  cursor: pointer;
+  fill: var(--light-slate);
 }
 
+.custumer-item:is(:hover, :focus) {
+  border-color: var(--pressed-state);
+  fill: var(--pressed-state);
+}
+
+.custumer-box {
+  margin-top: 72px;
+  padding-bottom: 105px;
+}
+
+.custumer-icons {
+  height: 56px;
+  width: 104px;
+}
 
 /* --------------------------------------------------portfolio */
 .btn-portfolio {
@@ -439,6 +477,15 @@ p {
   border-left: 1px solid var(--footer-text);
   border-right: 1px solid var(--footer-text);
   border-bottom: 1px solid var(--footer-text);
+  box-shadow: 0px 1px 6px 0px #2e2f4214;
+}
+
+.portfolio-box:hover {
+  border-left: 0.5px solid #f4f4fd;
+  border-right: 0.5px solid #f4f4fd;
+  border-bottom: 0.5px solid #f4f4fd;
+  box-shadow: 0px 2px 1px 0px #2e2f4214, 0px 1px 1px 0px #2e2f4229,
+    0px 1px 6px 0px #2e2f4214;
 }
 
 img {
@@ -447,7 +494,7 @@ img {
   height: auto;
 }
 
-/* -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+/* NAO INTERESSA */
 section {
   display: block;
 }
@@ -472,7 +519,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 24px;
-  
+
   margin-bottom: 32px;
   margin-top: 8px;
 }
@@ -482,28 +529,34 @@ section {
   height: 40px;
 }
 
-
 .team-social-link {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  
-  display: block;
+  display: flex;
   background-color: var(--primary-brand);
+  justify-content: center;
+  align-items: center;
 }
+
+.team-social-link:hover {
+  background-color: var(--pressed-state);
+}
+
 /* main description */
 
-.svg-components-description{
+.svg-components-description {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 264px;
   height: 112px;
-  
   background-color: var(--btn-portfolio-back-primary);
   border-radius: 4px;
 }
 
-.svg-description-main{
+.svg-description-main {
   width: 64px;
   height: 64px;
-  
   
 }
