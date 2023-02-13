@@ -410,10 +410,6 @@ p {
   fill: var(--pressed-state);
 }
 
-.custumer-box {
-  margin-top: 72px;
-  padding-bottom: 105px;
-}
 
 .custumer-icons {
   height: 56px;
