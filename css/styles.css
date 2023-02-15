@@ -140,7 +140,10 @@ p {
   color: var(--focus-blue);
 }
 
+
 /* ------------------------------------------------------------------------------------MAIN */
+
+
 .section-one {
   max-width: 1440px;
   padding-top: 188px;
@@ -421,7 +424,33 @@ p {
   padding-top: 130px;
 }
 
+.footer-social-title{
+  align-items: baseline;
+}
 /* --------------------------------------------------portfolio */
+.cover-text{
+  position: absolute;
+  top: 0;
+  color: var(--btn-portfolio-back-primary);
+  background-color: var(--primary-brand);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0.02em;
+  height: 100%;
+  padding-top: 40px;
+  padding-left: 32px;
+  transform: translateY(100%);
+  transition: transform 300ms linear;
+}
+.main-description-cards:hover .cover-text{
+  transform: translateY(0);
+  transition: transform 300ms linear;
+}
+.cover-wrap{
+  position: relative;
+  overflow: hidden;
+}
 .btn-portfolio {
   padding-top: 96px;
 }
